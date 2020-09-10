@@ -5,9 +5,9 @@
       <p>File should be Jpeg, Png,...</p>
       <vue-dropzone id="drop1" :options="dropOptions" @vdropzone-complete="afterComplete"></vue-dropzone>
         <div>
-          <p>or</p>
+          <p style="margin-top: 19px ;">Or</p>
           <div class="center">
-            <input type="button" id="get_file" value="Grab file" @click="chooseFiles">
+            <input type="button" id="get_file" value="Choose a file" @click="chooseFiles">
             <input type="file" id="my_file" @change="previewImage" accept="image/*" hidden>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default {
                               <path d="M57.5995 21.4551C55.9361 21.4538 54.2952 21.8385 52.8058 22.5786C51.3164 23.3188 50.0192 24.3944 49.0163 25.7207C47.9398 25.2577 46.7652 25.0691 45.5978 25.1719C44.4304 25.2747 43.3069 25.6656 42.328 26.3095C41.349 26.9534 40.5455 27.8302 39.9893 28.8612C39.4332 29.8921 39.1419 31.045 39.1416 32.2162H68.3665C68.3665 30.8031 68.088 29.4037 67.547 28.0981C67.0059 26.7925 66.2127 25.6062 65.2129 24.6069C64.2131 23.6077 63.0262 22.815 61.7198 22.2742C60.4135 21.7334 59.0134 21.4551 57.5995 21.4551V21.4551Z" fill="#CCCCCC"/>
                               <path d="M23.7362 10.2324C22.0728 10.2312 20.4319 10.6158 18.9425 11.356C17.4531 12.0962 16.1559 13.1717 15.153 14.498C14.0766 14.035 12.9019 13.8465 11.7345 13.9492C10.5671 14.052 9.44358 14.4429 8.46467 15.0868C7.48576 15.7307 6.68217 16.6075 6.12603 17.6385C5.56988 18.6695 5.2786 19.8223 5.27832 20.9936H34.5033C34.5033 19.5804 34.2248 18.1811 33.6837 16.8755C33.1426 15.5699 32.3495 14.3836 31.3497 13.3843C30.3498 12.385 29.1629 11.5924 27.8566 11.0516C26.5502 10.5108 25.1501 10.2324 23.7362 10.2324V10.2324Z" fill="#CCCCCC"/>
                             </svg>
-                            <p style="font-size: 12px">Drag & Drop your image here</p>
+                            <p style="font-size: 12px; color: #BDBDBD; letter-spacing: -0.035em;font-weight: 500;">Drag & Drop your image here</p>
                             `
       },
       images: []
@@ -134,6 +134,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
   .preview{
     width: 200px;
   }
@@ -146,15 +147,15 @@ export default {
 
   p{
     font-size: 10px;
-    color: #4F4F4F;
+    color: #828282;
     text-align: center;
   }
 
   .container {
     background-color: #FAFAFB;
     position: absolute;
-    width: 402px;
-    height: 469px;
+    width: 340px;
+    height: 400px;
     top: 50%;
     left: 50%;
     margin-right: -50%;
@@ -181,6 +182,20 @@ export default {
   #drop1{
     border: 1px dashed #97BEF4;
     margin: 0px 32px;
+    background-color: #F6F8FB;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  input{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.035em;
+
   }
 
 </style>
