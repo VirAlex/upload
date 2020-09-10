@@ -29,7 +29,7 @@ import vue2Dropzone from 'vue2-dropzone'
 import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 let uuid = require('uuid')
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   components: {
     vueDropzone: vue2Dropzone,
     Progress,
