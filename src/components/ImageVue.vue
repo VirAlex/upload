@@ -26,27 +26,16 @@ export default {
 </script>
 
 <style scoped>
-input[type="submit"] {
-  text-align: center;
-    margin-left: -50px;
-    height: 30px;
-    width: 74px;
-    background: #2F80ED;
-    color: white;
-    border-radius: 8px;
-    padding: 17px;
-}
-
-
-
-
-
-
-
-
-
-
-
+  input[type="submit"] {
+    text-align: center;
+      margin-left: -50px;
+      height: 30px;
+      width: 74px;
+      background: #2F80ED;
+      color: white;
+      border-radius: 8px;
+      padding: 17px;
+  }
   h2 {
     font-size: 18px;
   }
