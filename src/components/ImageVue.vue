@@ -5,7 +5,7 @@
     <div :style="{ backgroundImage: 'url(' + src + ')' }" class="img">
     </div>
     <input type="text" v-model="src" ref="copyThis" @focus="$event.target.select()">
-    <input type="submit" @click="copy">
+    <input type="submit" @click="copy" value="Copy Link">
     <!-- <button @click="copy">Copy link</button> -->
   </div>
 </template>
@@ -28,13 +28,21 @@ export default {
 <style scoped>
   input[type="submit"] {
     text-align: center;
-      margin-left: -50px;
+      margin-left: -82px;
       height: 30px;
       width: 74px;
       background: #2F80ED;
       color: white;
       border-radius: 8px;
       padding: 17px;
+      border: 0;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 8px;
+      line-height: 4px;
+      text-align: center;
+      letter-spacing: -0.035em;
   }
   h2 {
     font-size: 18px;
@@ -48,7 +56,7 @@ export default {
     width: 35px;
     height: 35px;
   }
-  .img{
+  .img {
     width: 338px;
     height: 224px;
     border-radius: 12px;
@@ -58,13 +66,13 @@ export default {
     background-position: center center;
   }
 
-  input{
+  input[type="text"]{
     margin-top: 25px;
-    width: 65%;
+    width: 57%;
     height: 35px;
     color: #4F4F4F;
     border-radius: 8px;
-    padding-right: 50px;
+    padding-right: 80px;
     border: 1px solid #E0E0E0;
   }
 
