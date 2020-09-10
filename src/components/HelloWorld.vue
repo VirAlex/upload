@@ -154,8 +154,8 @@ export default {
   .container {
     background-color: #FAFAFB;
     position: absolute;
-    width: 340px;
-    height: 400px;
+    width: 400px;
+    height: 450px;
     top: 50%;
     left: 50%;
     margin-right: -50%;
