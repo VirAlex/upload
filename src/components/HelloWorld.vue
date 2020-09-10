@@ -176,7 +176,8 @@ export default {
     border: none;
     padding: 8px 16px;
     color: white;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
+
   }
 
   #drop1{
@@ -195,7 +196,5 @@ export default {
     line-height: 16px;
     text-align: center;
     letter-spacing: -0.035em;
-
   }
-
 </style>

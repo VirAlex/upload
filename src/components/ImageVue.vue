@@ -26,24 +26,6 @@ export default {
 </script>
 
 <style scoped>
-  input[type="submit"] {
-    text-align: center;
-      margin-left: -82px;
-      height: 30px;
-      width: 74px;
-      background: #2F80ED;
-      color: white;
-      border-radius: 8px;
-      padding: 17px;
-      border: 0;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 8px;
-      line-height: 4px;
-      text-align: center;
-      letter-spacing: -0.035em;
-  }
   h2 {
     font-size: 18px;
   }
@@ -74,6 +56,25 @@ export default {
     border-radius: 8px;
     padding-right: 80px;
     border: 1px solid #E0E0E0;
+  }
+
+    input[type="submit"] {
+    text-align: center;
+      margin-left: -82px;
+      height: 30px;
+      width: 74px;
+      background: #2F80ED;
+      color: white;
+      border-radius: 8px;
+      padding: 17px;
+      border: 0;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 8px;
+      line-height: 4px;
+      text-align: center;
+      letter-spacing: -0.035em;
   }
 
   button {
